@@ -6,7 +6,7 @@ import { Education } from './components/education/education';
 import { Welcome } from './components/welcome/welcome';
 
 export const routes: Routes = [
-    { path: 'welcome', component: Welcome},
+    { path: '', component: Welcome},
     { path: 'profile', component: Profile },
     { path: 'experience', component: Experience },
     { path: 'projects', component: Projects },
