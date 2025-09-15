@@ -1,0 +1,25 @@
+h1 {
+    animation: move-left-to-right 2s forwards;
+}
+
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-800px);
+    }
+    to {
+        transform: translateX(0)
+    }
+}
+
+a {
+    animation: move-right-to-left 2s forwards;
+}
+
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(800px);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
