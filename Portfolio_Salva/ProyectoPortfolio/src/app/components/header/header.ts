@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
 import { RouterLink } from '@angular/router';
+import { Theme } from '../../services/theme';
 
 @Component({
   selector: 'app-header',
@@ -8,5 +9,15 @@ import { RouterLink } from '@angular/router';
   styleUrl: './header.css'
 })
 export class Header {
+  private theme = inject(Theme)
+  currentTheme: String = 'auto';
 
+  ngOnInit() : void {
+    this.currentTheme = this.theme.getCurrentTheme();
+  }
+
+  changeTheme(theme: 'light' | 'dark' | 'auto') {
+    this.theme.setTheme(theme);
+    this.currentTheme = theme;
+  }
 }
