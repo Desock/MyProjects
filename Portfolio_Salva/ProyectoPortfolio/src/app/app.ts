@@ -12,7 +12,7 @@ import { Router, Event, NavigationEnd, RouterOutlet } from '@angular/router';
   styleUrl: './app.css'
 })
 export class App {
-  protected readonly title = signal('ProyectoPortfolio');
+  protected readonly title = signal('Salvador Gomez Risen Portfolio');
    constructor(public router: Router) {
   }
 
