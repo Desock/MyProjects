@@ -20,4 +20,13 @@ export class Header {
     this.theme.setTheme(theme);
     this.currentTheme = theme;
   }
+
+  // navbar.component.ts
+changeLanguage(lang: string) {
+  const select = document.querySelector("select.goog-te-combo") as HTMLSelectElement;
+  if (select) {
+    select.value = lang;
+    select.dispatchEvent(new Event("change"));
+  }
+}
 }
