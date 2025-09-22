@@ -1,11 +1,11 @@
 <!-- ========== HEADER ========== -->
 <header class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
     <nav
-        class="mt-4 relative max-w-2xl w-full bg-white border border-gray-200 rounded-[24px] mx-2 flex flex-wrap md:flex-nowrap items-center justify-between p-1 ps-4 md:py-0 sm:mx-auto dark:bg-gray-500 dark:border-neutral-700">
+        class="mt-4 relative max-w-2xl w-full bg-white border border-gray-200 rounded-[24px] mx-2 flex flex-wrap md:flex-nowrap md:justify-between p-1 ps-4 md:py-0 sm:mx-auto dark:bg-gray-500 dark:border-neutral-700">
         <div class="flex items-center">
             <!-- Logo -->
             <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
-                [routerLink]="['']" aria-label="Preline">
+                [routerLink]="['/profile']" aria-label="Preline">
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
                     stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
@@ -32,7 +32,7 @@
             <div class="md:hidden">
                 <!-- Toggle Button -->
                 <button type="button"
-                    class="hs-collapse-toggle flex justify-center items-center size-9.5 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    class="hs-collapse-toggle flex justify-center items-center mx-5 size-9.5 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                     id="hs-navbar-header-floating-collapse" aria-expanded="false"
                     aria-controls="hs-navbar-header-floating" aria-label="Toggle navigation"
                     data-hs-collapse="#hs-navbar-header-floating">
@@ -65,8 +65,8 @@
                     [routerLink]="['/experience']">Experience</a>
                 <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-white-800 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
                     [routerLink]="['/education']">Education</a>
-                <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-white-800 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
-                    [routerLink]="['/projects']">Projects</a>
+                <!-- <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-white-800 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
+                    [routerLink]="['/projects']">Projects</a> -->
                 <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-white-800 hover:text-gray-800 focus:outline-hidden dark:text-neutral-400 dark:hover:text-neutral-200"
                     [routerLink]="['/skills']">Skills</a>
             </div>
@@ -104,14 +104,14 @@
                 </span>
             </button>
             }
-        <div class="mx-5 shrink-0 inline-flex gap-2 bg-white dark:bg-gray-500">
-            <button>
-                <img src="/assets/es-button-01.png" alt="spanish_flag" class="size-7 rounded-full" (click)="changeLanguage('es')">
+        <!-- <div class="mx-2 shrink-0 inline-flex gap-2 bg-white dark:bg-gray-500">
+            <button type="button" (click)="changeLanguage('es')" class="border-neutral-950 dark:border-neutral-100 hover:border-red-600 border-2 dark:hover:border-amber-300 rounded-full">
+                <img src="/assets/es-button-01.png" alt="spanish_flag" class="size-7 rounded-full">
             </button>
-            <button>
-                <img src="/assets/british-flag.png" alt="british_flag" class="size-7 rounded-full" (click)="changeLanguage('en')">
+            <button type="button" (click)="changeLanguage('en')">
+                <img src="/assets/british-flag.png" alt="british_flag" class="size-7 rounded-full" >
             </button>
-        </div>
+        </div> -->
     </nav>
 </header>
 <!-- ========== END HEADER ========== -->
