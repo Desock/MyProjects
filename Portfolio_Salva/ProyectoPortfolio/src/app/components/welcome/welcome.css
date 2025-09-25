@@ -1,3 +1,5 @@
+
+
 h1 {
     animation: move-left-to-right 2s forwards;
 }
@@ -22,4 +24,12 @@ a {
     to {
         transform: translateX(0);
     }
+}
+
+@layer utilities {
+  @media (orientation: landscape) {
+    .landscape\:whitespace-normal {
+      white-space: normal;
+    }
+  }
 }

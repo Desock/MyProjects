@@ -1,21 +1,20 @@
 <!-- Hero -->
-<div class="min-h-dvh min-w-dvw flex items-center justify-center bg-gradient-to-b from-white via-gray-300 to-gray-600">
-  <div
-    class="h-210 sm:h-[95dvh] w-[95dvw] flex flex-col bg-[url('/assets/imgs/welcome_photo_salva.jpg')] bg-cover bg-top bg-no-repeat rounded-2xl">
-    <div class="mt-auto w-2/3 md:max-w-lg ps-5 pb-5 md:ps-10 md:pb-10">
-      <h1 class="text-xl md:text-3xl lg:text-5xl text-gray-500">
-        Salvador Gomez Risen <b>Professional Portfolio</b>
-      </h1>
-    </div>
-    <div class="flex flex-wrap justify-center gap-1.5 sm:gap-2">
-      <a class="py-1.5 px-2.5 inline-flex items-center m-10 hover:scale-110 transition-transform gap-x-1.5 text-sm text-neutral-100 bg-gray-700 hover:text-gray-300 rounded-lg "
-         [routerLink]="['/profile']">
-        <svg class="size-6">
-          <use href="/assets/icons/sprite.svg#eye-icon" />
-        </svg>
-        Go to my portfolio
-      </a>
-    </div>
+<div class="relative h-screen w-full">
+  <img src="/assets/imgs/welcome_foto_salvador.png" alt="Welcome Photo" class="h-screen w-auto object-contain mx-auto" />
+  <div class="absolute bottom-24 left-0 w-2/3 md:max-w-lg ps-5 md:ps-10">
+    <h1 class="text-2xl sm:text-md md:text-md lg:text-xl text-gray-500 landscape:whitespace-normal landscape:text-3xl landscape:sm:text-3xl">
+      Salvador Gomez Risen <b>Professional Portfolio</b>
+    </h1>
+  </div>
+
+  <div class="absolute bottom-5 w-full flex justify-center gap-1.5 sm:gap-2">
+    <a class="py-1.5 px-2.5 inline-flex items-center hover:scale-110 transition-transform gap-x-1.5 text-sm text-neutral-100 bg-gray-700 hover:text-gray-300 rounded-lg"
+      [routerLink]="['/profile']">
+      <svg class="size-6">
+        <use href="/assets/icons/sprite.svg#eye-icon" />
+      </svg>
+      Go to my portfolio
+    </a>
   </div>
 </div>
 <!-- End Hero -->

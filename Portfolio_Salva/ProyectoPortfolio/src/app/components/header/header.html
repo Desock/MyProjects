@@ -1,7 +1,7 @@
 <!-- ========== HEADER ========== -->
 <header class="sticky top-0 inset-x-0 flex flex-wrap md:justify-start md:flex-nowrap z-50 w-full text-sm">
     <nav
-        class="mt-4 relative max-w-2xl w-full bg-neutral-200 border border-gray-200 rounded-[24px] mx-2 flex flex-wrap md:flex-nowrap md:justify-between p-1 ps-4 md:py-0 sm:mx-auto dark:bg-gray-500 dark:border-neutral-700">
+        class="mt-4 relative max-w-sm md:max-w-2xl w-full bg-neutral-200 border border-gray-200 rounded-[24px] mx-2 flex flex-wrap md:flex-nowrap md:justify-between p-1 ps-4 md:py-0 sm:mx-auto dark:bg-gray-500 dark:border-neutral-700">
         <div class="flex items-center">
             <!-- Logo -->
             <a class="flex-none rounded-md text-xl inline-block font-semibold focus:outline-hidden focus:opacity-80"
@@ -15,7 +15,8 @@
 
             <div class="ms-1 sm:ms-2">
                 <div class="ms-2 sm:ms-3">
-                    <h1 class="text-2xl font-bold text-black dark:text-white whitespace-nowrap font-mono">My Portfolio
+                    <h1 class="text-2xl font-bold text-black dark:text-white whitespace-nowrap font-mono">
+                        My Portfolio
                     </h1>
                 </div>
 
@@ -26,7 +27,7 @@
             <div class="md:hidden">
                 <!-- Toggle Button -->
                 <button type="button"
-                    class="hs-collapse-toggle flex justify-center items-center mx-5 size-9.5 border border-gray-200 text-gray-500 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
+                    class="hs-collapse-toggle flex justify-center items-center mx-5 size-9.5 border-2 border-gray-500 text-gray-500 bg-white rounded-full hover:bg-black focus:outline-hidden focus:bg-gray-200 dark:border-neutral-700 dark:text-neutral-400 dark:hover:bg-neutral-700 dark:focus:bg-neutral-700"
                     id="hs-navbar-header-floating-collapse" aria-expanded="false"
                     aria-controls="hs-navbar-header-floating" aria-label="Toggle navigation"
                     data-hs-collapse="#hs-navbar-header-floating">
@@ -67,7 +68,7 @@
         </div>
         @if (currentTheme !== 'dark') {
         <button type="button"
-            class="mx-2 hs-dark-mode-active:hidden block hs-dark-mode font-medium text-black rounded-full hover:bg-white focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+            class="mx-2 hs-dark-mode-active:hidden block hs-dark-mode font-medium text-black hover:text-amber-200 rounded-full hover:bg-black focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
             data-hs-theme-click-value="dark" (click)="changeTheme('dark')">
             <span class="group inline-flex shrink-0 justify-center items-center size-9">
                 <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
@@ -79,7 +80,7 @@
         </button>
         } @else {
         <button type="button"
-            class="mx-2 hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+            class="mx-2 hs-dark-mode-active:block hidden hs-dark-mode font-medium text-gray-800 rounded-full hover:bg-gray-200 focus:outline-hidden focus:bg-gray-200 dark:text-amber-200 dark:hover:bg-amber-200 dark:focus:bg-neutral-800 dark:hover:text-black"
             data-hs-theme-click-value="light" (click)="changeTheme('light')">
             <span class="group inline-flex shrink-0 justify-center items-center size-9">
                 <svg class="shrink-0 size-4" xmlns="http://www.w3.org/2000/svg" width="24" height="24"
