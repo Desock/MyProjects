@@ -1,5 +1,4 @@
 {
-  "public": "dist/ProyectoPortfolio/browser",
   "rewrites": [
     { "source": "/(.*)", "destination": "/index.html" }
   ]
