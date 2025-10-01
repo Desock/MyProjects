@@ -6,7 +6,7 @@ h1 {
 
 @keyframes move-left-to-right {
     from {
-        transform: translateX(-800px);
+        transform: translateX(-100vw);
     }
     to {
         transform: translateX(0)
@@ -19,7 +19,7 @@ a {
 
 @keyframes move-right-to-left {
     from {
-        transform: translateX(800px);
+        transform: translateX(100vw);
     }
     to {
         transform: translateX(0);
