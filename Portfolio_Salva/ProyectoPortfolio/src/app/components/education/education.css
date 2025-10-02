@@ -1,0 +1,26 @@
+#cont1, #cont3 {
+    animation: move-left-to-right 2s forwards;
+}
+
+#cont2 {
+    animation: move-right-to-left 2s forwards;
+}
+
+@keyframes move-left-to-right {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0)
+    }
+}
+
+@keyframes move-right-to-left {
+    from {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(0)
+    }
+}
+
