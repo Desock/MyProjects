@@ -3,6 +3,3 @@
 @plugin "@tailwindcss/forms";
 @custom-variant dark (&:where(.dark, .dark *));
 
-/* #google_translate_element {
-    display: none;
-} */
