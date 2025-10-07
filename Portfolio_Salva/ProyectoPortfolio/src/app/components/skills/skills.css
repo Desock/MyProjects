@@ -1,0 +1,7 @@
+dl:hover {
+    transform:scale(110%)
+}
+
+dl:active {
+    transform: scale(120%);
+}
