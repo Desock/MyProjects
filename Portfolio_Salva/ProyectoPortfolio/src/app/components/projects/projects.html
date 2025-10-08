@@ -1,6 +1,12 @@
 <app-header></app-header>
 <div class="flex justify-center font-bold font-mono mt-10 text-4xl dark:text-neutral-100">
-    <h1>Projects</h1>
+    <div class="inline-flex items-center mx-5">
+        <svg class="size-12 dark:bg-white rounded-full">
+            <use href="/assets/icons/sprite.svg#icon-project" />
+        </svg>
+        <h1 class="mx-4">Projects</h1>
+    </div>
+
 </div>
 <div class="mx-10 py-5 flex justify-center">
     <p class="mt-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
@@ -8,18 +14,18 @@
     </p>
 </div>
 <!-- Card Grid -->
-<div class="grow landscape:min-h-dvh py-12 grid px-10 grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 lg:max-w-[1200px] mx-auto">
+<div
+    class="grow landscape:min-h-dvh py-12 grid px-10 grid-cols-1 sm:grid-cols-2 gap-8 lg:gap-12 lg:max-w-[1200px] mx-auto">
     <!-- Card -->
-    <a class="group flex flex-col focus:outline-hidden sm:max-h-[600px]" href="https://github.com/Jacka97/ProyectoInventario" target="_blank">
+    <a class="group flex flex-col focus:outline-hidden sm:max-h-[600px]"
+        href="https://github.com/Jacka97/ProyectoInventario" target="_blank">
         <div class="overflow-hidden bg-gray-100 rounded-2xl">
             <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out object-cover h-full w-full rounded-2xl"
-                src="/assets/imgs/logo-project-inventory.png"
-                alt="Logo project">
+                src="/assets/imgs/logo-project-inventory.png" alt="Logo project">
         </div>
 
         <div class="pt-4">
-            <h3
-                class="relative inline-block font-medium text-lg text-black dark:text-white">
+            <h3 class="relative inline-block font-medium text-lg text-black dark:text-white">
                 Inventory
             </h3>
             <p class="mt-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
@@ -30,16 +36,15 @@
     <!-- End Card -->
 
     <!-- Card -->
-    <a class="group flex flex-col focus:outline-hidden" href="https://github.com/Desock/MyProjects/tree/main/Portfolio_Salva/ProyectoPortfolio" target="_blank">
+    <a class="group flex flex-col focus:outline-hidden"
+        href="https://github.com/Desock/MyProjects/tree/main/Portfolio_Salva/ProyectoPortfolio" target="_blank">
         <div class="overflow-hidden bg-gray-100 rounded-2xl">
             <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out object-cover h-full w-full rounded-2xl"
-                src="/assets/imgs/welcome_foto_salvador.png"
-                alt="Salva Portfolio">
+                src="/assets/imgs/welcome_foto_salvador.png" alt="Salva Portfolio">
         </div>
 
         <div class="pt-4">
-            <h3
-                class="relative inline-block font-medium text-lg text-black dark:text-white">
+            <h3 class="relative inline-block font-medium text-lg text-black dark:text-white">
                 Portfolio
             </h3>
             <p class="mt-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
@@ -47,7 +52,7 @@
             </p>
         </div>
     </a>
-    
+
     <!-- End Card -->
 </div>
 <!-- End Card Grid -->
