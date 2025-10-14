@@ -1,225 +1,201 @@
 <!-- Timeline -->
-
-<app-header></app-header>
-<div class="flex justify-center font-bold font-mono mt-10 text-3xl sm:text-4xl dark:text-neutral-100">
-    <div class="inline-flex items-center mx-5">
-        <svg class="size-12 dark:bg-white p-1 rounded-full">
-            <use href="/assets/icons/sprite.svg#icon-work" />
-        </svg>
-        <h1 class="mx-2">Work Experience</h1>
-    </div>
-</div>
-
-<!-- Item -->
-<div class="group relative flex gap-x-5 mt-10 mx-10">
-
-    <!-- Right Content -->
-    <div class="grow pb-8 group-last:pb-0">
-        <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            2025: Sinerkab
-        </h3>
-
-        <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
-            Warehouse Laborer
-        </p>
-
-        <p class="mt-1 ml-8 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            Specializaded company in cutting metal with laser.
-        </p>
-
-        <ul class="list-disc ms-6 mt-3 space-y-1.5 ml-10">
-            <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                Loading and unloading the cutted pieces.
-            </li>
-            <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                Assist in the laser machine.
-            </li>
-            <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                Work with the pieces (Polishing, edge trimming, radial cuts, sanding).
-            </li>
-        </ul>
-    </div>
-    <!-- End Right Content -->
-</div>
-<!-- End Item -->
-
-<!-- Item -->
-<div class="group relative flex gap-x-5 mx-10">
-    <!-- Right Content -->
-    <div class="grow pb-8 group-last:pb-0">
-        <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            2024: Jysk
-        </h3>
-
-        <p class="font-semibold text-lg ml-5 md:text-sm text-gray-800 dark:text-neutral-200">
-            Warehose Worker
-        </p>
-
-        <p class="mt-1 text-lg ml-8 md:text-sm text-gray-600 dark:text-neutral-400">
-            Furnitures' Company
-        </p>
-
-        <div class="mt-3 sm:ml-10">
-
-            <a class="block border border-gray-200 rounded-lg hover:shadow-2xs focus:outline-hidden dark:border-neutral-700 max-w-2xl"
-                href="https://jysk.es/" target="_blank">
-                <div class="relative flex items-center overflow-hidden">
-                    <img class="w-32 sm:w-48 h-full absolute inset-0 object-cover rounded-s-lg"
-                        src="/assets/imgs/JYSK_Google+_250x250.jpg" alt="jysk">
-
-                    <div class="grow p-4 ms-32 sm:ms-48">
-                        <div class="min-h-24 flex flex-col justify-center">
-                            <h3 class="font-semibold text-lg md:text-sm text-gray-800 dark:text-neutral-300">
-                                Warehouse Worker by Jysk
-                            </h3>
-                            <p class="mt-1 text-lg md:text-sm text-gray-500 dark:text-neutral-500">
-                                Picking with PDA and prepare orders for delivery.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </a>
-
+<div class="flex flex-col min-h-dvh">
+    <app-header></app-header>
+    <div
+        class="inline-grid items-center justify-center font-bold font-mono mt-10 text-2xl sm:text-4xl dark:text-neutral-100">
+        <div class="grid items-center justify-center md:flex md:items-center md:justify-center mx-5">
+            <div class="flex items-center justify-center">
+                <svg class="size-12 dark:bg-white p-1 rounded-full">
+                    <use href="/assets/icons/sprite.svg#icon-work" />
+                </svg>
+            </div>
+            <h1 class="my-2 mx-2">{{'workExperience' | translate}}</h1>
         </div>
     </div>
-    <!-- End Right Content -->
-</div>
-<!-- End Item -->
 
-<!-- Item -->
-<div class="group relative flex gap-x-5 mx-10">
+    <!-- Item -->
+    <div class="mx-5 my-2 inline-grid items-center justify-center flex-grow py-5">
+        <div class="grid items-start justify-start my-5">
+            <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                2025: Sinerkab
+            </h3>
 
-    <!-- Right Content -->
-    <div class="grow pb-8 group-last:pb-0">
-        <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            2023: AlfilPack
-        </h3>
+            <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
+                {{'laborer' | translate}}
+            </p>
 
-        <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
-            Workshop Assistant
-        </p>
+            <p class="mt-1 ml-8 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                {{'snkDesc' | translate}}
+            </p>
 
-        <p class="mt-1 ml-8 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            Cardboard factory whose purpose is to shape boxes depending on the guidelines of client companies.
-            My main task was to help the rest of the employees in the machines to package the cardboard.
-        </p>
-    </div>
-    <!-- End Right Content -->
-</div>
-<!-- End Item -->
+            <ul class="list-disc ms-6 mt-3 space-y-1.5 ml-10">
+                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                    {{'listSnk1' | translate}}
+                </li>
+                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                    {{'listSnk2' | translate}}
+                </li>
+                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                    {{'listSnk3' | translate}}
+                </li>
+            </ul>
+        </div>
 
-<!-- Item -->
-<div class="group relative flex gap-x-5 mx-10">
+        <div class="grid items-center justify-center my-5">
+            <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                2024: Jysk
+            </h3>
 
-    <!-- Right Content -->
-    <div class="grow pb-8 group-last:pb-0">
-        <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            2020 - 2021: Big Buy
-        </h3>
+            <p class="font-semibold text-lg ml-5 md:text-sm text-gray-800 dark:text-neutral-200">
+                {{'warehouse' | translate}}
+            </p>
 
-        <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
-            Warehouse Worker
-        </p>
-        <p class="mt-1 ml-8 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            E-commerce Company
-        </p>
+            <p class="mt-1 text-lg ml-8 md:text-sm text-gray-600 dark:text-neutral-400">
+                {{'jysk' | translate}}
+            </p>
 
-        <div class="mt-3 sm:ml-10">
+            <div class="mt-3 ml-5 sm:ml-10">
+                <a class="block border border-gray-200 rounded-lg hover:shadow-2xs focus:outline-hidden dark:border-neutral-700 max-w-2xl"
+                    href="https://jysk.es/" target="_blank">
+                    <div class="relative flex items-center overflow-hidden">
+                        <img class="w-32 sm:w-48 h-full absolute inset-0 object-cover rounded-s-lg"
+                            src="/assets/imgs/JYSK_Google+_250x250.jpg" alt="jysk">
 
-            <a class="block border border-gray-200 rounded-lg hover:shadow-2xs focus:outline-hidden dark:border-neutral-700 max-w-2xl"
-                href="https://www.bigbuy.eu/" target="_blank">
-                <div class="relative flex items-center overflow-hidden">
-                    <img class="w-30 sm:w-38 h-full absolute inset-0 object-conver rounded-s-lg"
-                        src="/assets/imgs/Logotipo_BigBuy.png" alt="bigbuy">
-                    <div class="grow p-4 ms-32 sm:ms-48">
-                        <div class="min-h-24 flex flex-col justify-center">
-                            <h3 class="font-semibold text-lg md:text-sm text-gray-800 dark:text-neutral-300">
-                                Warehouse Worker by BigBuy
-                            </h3>
-                            <ul class="list-disc ms-6 mt-3 space-y-1.5">
-                                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                                    Packaging
-                                </li>
-                                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                                    Picking
-                                </li>
-                                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                                    Inventory Management
-                                </li>
-                            </ul>
+                        <div class="grow p-4 ms-32 sm:ms-48">
+                            <div class="min-h-24 flex flex-col justify-center">
+                                <h3 class="font-semibold text-lg md:text-sm text-gray-800 dark:text-neutral-300">
+                                    {{'jyskDsc' | translate}}
+                                </h3>
+                                <p class="mt-1 text-lg md:text-sm text-gray-500 dark:text-neutral-500">
+                                    {{'jyskJob' | translate}}
+                                </p>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+        </div>
+
+        <div class="grid items-start justify-start my-5">
+            <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                2023: AlfilPack
+            </h3>
+
+            <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
+                {{'workshop' | translate}}
+            </p>
+
+            <p class="mt-1 ml-8 text-lg md:text-sm text-gray-600 dark:text-neutral-400 place-items-center max-w-sm">
+                {{'alfilDsc' | translate}}
+            </p>
+        </div>
+
+        <div class="grid items-start justify-start my-5">
+            <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                2020 - 2021: Big Buy
+            </h3>
+
+            <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
+                {{'warehouse' | translate}}
+            </p>
+            <p class="mt-1 ml-8 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                {{'bigbuy' | translate}}
+            </p>
+
+            <div class="mt-3 sm:ml-10">
+
+                <a class="block border border-gray-200 rounded-lg hover:shadow-2xs focus:outline-hidden dark:border-neutral-700 max-w-2xl"
+                    href="https://www.bigbuy.eu/" target="_blank">
+                    <div class="relative flex items-center overflow-hidden p-2">
+                        <img class="w-30 sm:w-38 h-full absolute inset-0 object-conver rounded-s-lg"
+                            src="/assets/imgs/Logotipo_BigBuy.png" alt="bigbuy">
+                        <div class="grow p-4 ms-32 sm:ms-48">
+                            <div class="min-h-24 flex flex-col justify-center">
+                                <h3 class="font-semibold text-lg md:text-sm text-gray-800 dark:text-neutral-300">
+                                    {{'bigbuyDsc' | translate}}
+                                </h3>
+                                <ul class="list-disc ms-6 mt-3 space-y-1.5">
+                                    <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                                        {{'bigbuyJob1' | translate}}
+                                    </li>
+                                    <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                                        {{'bigbuyJob2' | translate}}
+                                    </li>
+                                    <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                                        {{'bigbuyJob3' | translate}}
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
 
         </div>
 
+        <div class="grid items-start justify-start my-5">
+            <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                2018-2019: SAMA Logistica
+            </h3>
+
+            <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
+                {{'warehouse' | translate}}
+            </p>
+
+            <p class="mt-1 text-lg ml-8 md:text-sm text-gray-600 dark:text-neutral-400">
+                {{'sama' | translate}}
+            </p>
+
+            <ul class="list-disc ml-10 ms-6 mt-3 space-y-1.5 place-items-center max-w-sm mx-2">
+                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                    {{'sama1' | translate}}
+                </li>
+                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                    {{'sama2' | translate}}
+                </li>
+                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                    {{'sama3' | translate}}
+                </li>
+                <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                    {{'sama4' | translate}}
+                </li>
+            </ul>
+        </div>
+
+        <div class="grid items-start justify-start my-5">
+            <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                2016-2017: {{'deliveryFree' | translate}}
+            </h3>
+
+            <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
+                {{'delivery' | translate}}
+            </p>
+
+            <p class="mt-1 place-items-center max-w-sm text-lg ml-8 md:text-sm text-gray-600 dark:text-neutral-400">
+                {{'deliveryDsc' | translate}}
+            </p>
+        </div>
+
+        <div class="grid items-start justify-start my-5">
+            <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+                2015: InSide Logistics
+            </h3>
+
+            <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
+                {{'delivery' | translate}}
+            </p>
+
+            <p class="mt-1 text-lg ml-8 md:text-sm text-gray-600 dark:text-neutral-400">
+                {{'insideDsc' | translate}}
+            </p>
+        </div>
+
     </div>
-    <!-- End Right Content -->
+
+
+    <!-- End Item -->
+    <app-footer></app-footer>
 </div>
-<div class="group relative flex gap-x-5 mx-10">
-    <div class="grow pb-8 group-last:pb-0">
-        <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            2018-2019: SAMA Logistica
-        </h3>
-
-        <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
-            Warehouse Worker
-        </p>
-
-        <p class="mt-1 text-lg ml-8 md:text-sm text-gray-600 dark:text-neutral-400">
-            Company that manage the delivery and assembly for IKEA.
-        </p>
-
-        <ul class="list-disc ml-10 ms-6 mt-3 space-y-1.5">
-            <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                Arrange orders for the next day delivery in Sama's warehouse.
-            </li>
-            <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                In Ikea's load docks, check orders and prepare to load at the trucks.
-            </li>
-            <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                I was in charge of a team of 6 employees and i had to manage their schedule, their taks and to be
-                a link between my company and ikea's people in charge.
-            </li>
-            <li class="ps-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-                Resolve incidence and problems.
-            </li>
-        </ul>
-    </div>
-</div>
-<div class="group relative flex gap-x-5 mx-10">
-    <div class="grow pb-8 group-last:pb-0">
-        <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            2016-2017: Delivery Freelance
-        </h3>
-
-        <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
-            Delivery guy
-        </p>
-
-        <p class="mt-1 text-lg ml-8 md:text-sm text-gray-600 dark:text-neutral-400">
-            I've worked as delivery guy with some delivery guys freelance as his assistant.
-            Delivery furnitures from ikea and sometime assembly.
-        </p>
-    </div>
-</div>
-<div class="group relative flex gap-x-5 mx-10">
-    <div class="grow pb-8 group-last:pb-0">
-        <h3 class="mb-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-            2015: InSide Logistics
-        </h3>
-
-        <p class="font-semibold ml-5 text-lg md:text-sm text-gray-800 dark:text-neutral-200">
-            Delivery guy
-        </p>
-
-        <p class="mt-1 text-lg ml-8 md:text-sm text-gray-600 dark:text-neutral-400">
-            Delivery furnitures for IKEA.
-        </p>
-    </div>
-</div>
-<!-- End Item -->
-<app-footer></app-footer>
 
 <!-- End Timeline -->
