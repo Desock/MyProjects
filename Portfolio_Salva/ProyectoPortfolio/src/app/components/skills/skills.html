@@ -1,4 +1,4 @@
-<div class="flex flex-col min-h-dvh">
+<div class="flex flex-col min-h-screen">
     <app-header></app-header>
     <div class="flex justify-center pb-2 font-bold font-mono mt-10 text-4xl dark:text-neutral-100">
         <div class="inline-flex items-center mx-5">
@@ -7,7 +7,7 @@
             </svg>
             <h1 class="mx-2">{{'skills' | translate}}</h1>
         </div>
-        
+
     </div>
     <div class="mx-10 pt-5 flex justify-center">
         <p class="mt-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
@@ -15,158 +15,162 @@
         </p>
     </div>
     <!-- List -->
-    <div class="mx-2 inline-grid items-center justify-center flex-grow py-5">
-        <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
-            <dt class="grow">
-                <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'tools' | translate}}</span>
-            </dt>
-            <dd>
-                <ul>
-                    <li class="me-1 my-1 flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-6 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-figma"></use>
-                        </svg>
-                        Figma
-                    </li>
-                </ul>
-            </dd>
-        </dl>
+    <main class="flex-1">
+        <div class="mx-2 grid items-center justify-center flex-grow py-5">
+            <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
+                <dt class="grow">
+                    <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'tools' | translate}}</span>
+                </dt>
+                <dd>
+                    <ul>
+                        <li class="me-1 my-1 flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-6 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-figma"></use>
+                            </svg>
+                            Figma
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
 
-        <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
-            <dt class="grow">
-                <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'languageLearned' | translate}}</span>
-            </dt>
-            <dd>
-                <ul>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-4 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-html5"></use>
-                        </svg>
-                        HTML
-                    </li>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-4 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-css3"></use>
-                        </svg>
-                        CSS
-                    </li>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-6 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-java"></use>
-                        </svg>
-                        Java
-                    </li>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-5 me-1 dark:fill-white" width="30" height="30">
-                            <use href="./assets/icons/sprite.svg#icon-angular"></use>
-                        </svg>
-                        Angular
-                    </li>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-6 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-php"></use>
-                        </svg>
-                        PHP
-                    </li>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-6 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-js"></use>
-                        </svg>
-                        JavaScript
-                    </li>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-6 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-bootstrap"></use>
-                        </svg>
-                        Bootstrap
-                    </li>
-                </ul>
-            </dd>
-        </dl>
+            <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
+                <dt class="grow">
+                    <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'languageLearned' |
+                        translate}}</span>
+                </dt>
+                <dd>
+                    <ul>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-4 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-html5"></use>
+                            </svg>
+                            HTML
+                        </li>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-4 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-css3"></use>
+                            </svg>
+                            CSS
+                        </li>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-6 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-java"></use>
+                            </svg>
+                            Java
+                        </li>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-5 me-1 dark:fill-white" width="30" height="30">
+                                <use href="./assets/icons/sprite.svg#icon-angular"></use>
+                            </svg>
+                            Angular
+                        </li>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-6 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-php"></use>
+                            </svg>
+                            PHP
+                        </li>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-6 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-js"></use>
+                            </svg>
+                            JavaScript
+                        </li>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-6 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-bootstrap"></use>
+                            </svg>
+                            Bootstrap
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
 
-        <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
-            <dt class="grow">
-                <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'languageLearning' | translate}}</span>
-            </dt>
-            <dd>
-                <ul>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-6 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-tailwind"></use>
-                        </svg>
-                        Tailwind
-                    </li>
-                    <li
-                        class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        <svg class="shrink-0 size-6 me-1 dark:fill-white">
-                            <use href="./assets/icons/sprite.svg#icon-laravel"></use>
-                        </svg>
-                        Laravel
-                    </li>
-                </ul>
-            </dd>
-        </dl>
+            <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
+                <dt class="grow">
+                    <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'languageLearning' |
+                        translate}}</span>
+                </dt>
+                <dd>
+                    <ul>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-6 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-tailwind"></use>
+                            </svg>
+                            Tailwind
+                        </li>
+                        <li
+                            class="me-1 mx-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            <svg class="shrink-0 size-6 me-1 dark:fill-white">
+                                <use href="./assets/icons/sprite.svg#icon-laravel"></use>
+                            </svg>
+                            Laravel
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
 
-        <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
-            <dt class="grow">
-                <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'design' | translate}}</span>
-            </dt>
-            <dd>
-                <ul>
-                    <li
-                        class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        {{'interfaces' | translate}}
-                    </li>
-                    <li
-                        class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        {{'responsive' | translate}}
-                    </li>
-                </ul>
-            </dd>
-        </dl>
+            <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
+                <dt class="grow">
+                    <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'design' | translate}}</span>
+                </dt>
+                <dd>
+                    <ul>
+                        <li
+                            class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            {{'interfaces' | translate}}
+                        </li>
+                        <li
+                            class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            {{'responsive' | translate}}
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
 
-        <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
-            <dt class="grow">
-                <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'skills' | translate}}:</span>
-            </dt>
-            <dd>
-                <ul>
-                    <li
-                        class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        {{'communication' | translate}}
-                    </li>
-                    <li
-                        class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        {{'problem' | translate}}
-                    </li>
-                    <li
-                        class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        {{'detail' | translate}}
-                    </li>
-                    <li
-                        class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        {{'teamwork' | translate}}
-                    </li>
-                    <li
-                        class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        {{'fastLearning' | translate}}
-                    </li>
-                    <li
-                        class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
-                        {{'fastPaced' | translate}}
-                    </li>
-                </ul>
-            </dd>
-        </dl>
-    </div>
+            <dl class="mx-10 my-2 border border-gray-200 p-2 rounded-lg">
+                <dt class="grow">
+                    <span class="text-lg md:text-sm text-gray-500 dark:text-gray-300">{{'skills' | translate}}:</span>
+                </dt>
+                <dd>
+                    <ul>
+                        <li
+                            class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            {{'communication' | translate}}
+                        </li>
+                        <li
+                            class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            {{'problem' | translate}}
+                        </li>
+                        <li
+                            class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            {{'detail' | translate}}
+                        </li>
+                        <li
+                            class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            {{'teamwork' | translate}}
+                        </li>
+                        <li
+                            class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            {{'fastLearning' | translate}}
+                        </li>
+                        <li
+                            class="me-1 my-1 inline-flex items-center text-lg md:text-sm text-gray-800 dark:text-neutral-100">
+                            {{'fastPaced' | translate}}
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+        </div>
+    </main>
     <!-- End List -->
     <app-footer></app-footer>
 </div>
