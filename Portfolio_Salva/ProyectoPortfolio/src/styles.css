@@ -3,6 +3,3 @@
 @plugin "@tailwindcss/forms";
 @custom-variant dark (&:where(.dark, .dark *));
 
-html {
-    -webkit-text-size-adjust: 0% !important;
-}
