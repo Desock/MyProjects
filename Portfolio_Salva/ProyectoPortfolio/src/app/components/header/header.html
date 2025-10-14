@@ -16,7 +16,7 @@
             <div class="ms-1 sm:ms-2">
                 <div class="ms-2 sm:ms-3">
                     <h1 class="text-2xl font-bold text-black dark:text-white whitespace-nowrap font-mono">
-                        My Portfolio
+                        {{'tittle' | translate}}
                     </h1>
                 </div>
             </div>
@@ -46,33 +46,24 @@
             <div
                 class="flex flex-col md:flex-row md:items-center md:justify-end gap-2 md:gap-3 mt-3 md:mt-0 py-2 md:py-0 md:ps-7">
                 <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-black hover:text-neutral-200 focus:outline-hidden dark:text-white dark:hover:text-neutral-400"
-                    [routerLink]="['/profile']" routerLinkActive="underline decoration-2 text-white">Profile</a>
+                    [routerLink]="['/profile']" routerLinkActive="underline decoration-2 text-white">{{'profile' | translate}}</a>
                 <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-black hover:text-neutral-200 focus:outline-hidden dark:text-white dark:hover:text-neutral-400"
-                    [routerLink]="['/experience']" routerLinkActive="underline decoration-2 text-white">Experience</a>
+                    [routerLink]="['/experience']" routerLinkActive="underline decoration-2 text-white">{{'experience' | translate}}</a>
                 <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-black hover:text-neutral-200 focus:outline-hidden dark:text-white dark:hover:text-neutral-400"
-                    [routerLink]="['/education']" routerLinkActive="underline decoration-2 text-white">Education</a>
+                    [routerLink]="['/education']" routerLinkActive="underline decoration-2 text-white">{{'education' | translate}}</a>
                 <a class="py-0.5 md:py-3 px-4 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-black hover:text-neutral-200 focus:outline-hidden dark:text-white dark:hover:text-neutral-400"
-                    [routerLink]="['/projects']" routerLinkActive="underline decoration-2 text-white">Projects</a>
+                    [routerLink]="['/projects']" routerLinkActive="underline decoration-2 text-white">{{'projects' | translate}}</a>
                 <a class="py-0.5 md:py-3 px-4 mr-2 md:px-1 border-s-2 md:border-s-0 md:border-b-2 border-transparent text-black hover:text-neutral-200 focus:outline-hidden dark:text-white dark:hover:text-neutral-400"
-                    [routerLink]="['/skills']" routerLinkActive="underline decoration-2 text-white">Skills</a>
+                    [routerLink]="['/skills']" routerLinkActive="underline decoration-2 text-white">{{'skills' | translate}}</a>
             </div>
         </div>
-
-        <!-- <div class="mx-2 shrink-0 inline-flex gap-2 bg-white dark:bg-gray-500">
-            <button type="button" (click)="changeLanguage('es')" class="border-neutral-950 dark:border-neutral-100 hover:border-red-600 border-2 dark:hover:border-amber-300 rounded-full">
-                <img src="/assets/es-button-01.png" alt="spanish_flag" class="size-7 rounded-full">
-            </button>
-            <button type="button" (click)="changeLanguage('en')">
-                <img src="/assets/british-flag.png" alt="british_flag" class="size-7 rounded-full" >
-            </button>
-        </div> -->
     </nav>
     <div class="flex-end mt-4 ml-2 bg-blue-800 dark:bg-sky-500 rounded-full">
         @if (currentTheme !== 'dark') {
         <button type="button"
-            class="mx-2 block hs-dark-mode font-medium text-white hover:text-amber-300 rounded-full focus:outline-hidden dark:text-neutral-200 dark:hover:bg-neutral-800 dark:focus:bg-neutral-800"
+            class="mx-2 block hs-dark-mode font-medium text-white hover:text-amber-300 rounded-full focus:outline-hidden dark:text-neutral-200"
             data-hs-theme-click-value="dark" (click)="changeTheme('dark')">
-            <span class="group inline-flex shrink-0 justify-center items-center size-9">
+            <span class="group inline-flex shrink-0 justify-center items-center size-9 rounded-full">
                 <svg class="shrink-0 size-4">
                     <use href="/assets/icons/sprite.svg#icon-moon"></use>
                 </svg>
@@ -82,7 +73,7 @@
         <button type="button"
             class="mx-2 hs-dark-mode-active:block hidden hs-dark-mode font-medium  text-gray-800 rounded-full focus:outline-hidden dark:text-white dark:hover:text-amber-400"
             data-hs-theme-click-value="light" (click)="changeTheme('light')">
-            <span class="group inline-flex shrink-0 justify-center items-center size-9">
+            <span class="group inline-flex shrink-0 justify-center items-center size-9 rounded-full">
                 <svg class="shrink-0 size-4">
                     <use href="/assets/icons/sprite.svg#icon-sun"></use>
 
@@ -91,6 +82,14 @@
         </button>
         }
     </div>
+     <div class="mx-2 mt-4 shrink-0 inline-flex gap-2 items-center justify-center">
+            <button type="button" (click)="switchLang('es')" class="rounded-full">
+                <img src="/assets/imgs/es-button-01.png" alt="spanish_flag" class="size-10 rounded-full">
+            </button>
+            <button type="button" (click)="switchLang('en')">
+                <img src="/assets/imgs/british-flag.png" alt="british_flag" class="size-10 rounded-full" >
+            </button>
+        </div>
 </header>
 
 <!-- ========== END HEADER ========== -->

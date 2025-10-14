@@ -1,17 +1,21 @@
 import { Component, inject } from '@angular/core';
 import { RouterLink, RouterLinkActive } from '@angular/router';
 import { Theme } from '../../services/theme';
+import { TranslatePipe, TranslateService } from '@ngx-translate/core';
 
 
 @Component({
   selector: 'app-header',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, TranslatePipe],
   templateUrl: './header.html',
   styleUrl: './header.css'
 })
 export class Header {
   private theme = inject(Theme)
   currentTheme: String = 'auto';
+  
+  constructor (private translate: TranslateService) {
+  }
 
   ngOnInit() : void {
     this.currentTheme = this.theme.getCurrentTheme();
@@ -22,12 +26,7 @@ export class Header {
     this.currentTheme = theme;
   }
 
-  // navbar.component.ts
-// changeLanguage(lang: string) {
-//   const select = document.querySelector("select.goog-te-combo") as HTMLSelectElement;
-//   if (select) {
-//     select.value = lang;
-//     select.dispatchEvent(new Event("change"));
-//   }
-// }
+ switchLang(lang: string) {
+    this.translate.use(lang);
+  }
 }
