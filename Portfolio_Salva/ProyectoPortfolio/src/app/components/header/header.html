@@ -33,9 +33,9 @@
             <div class="flex items-center justify-center gap-x-1 size-10 bg-blue-800 dark:bg-sky-500 rounded-full">
                 @if (currentTheme !== 'dark') {
                 <button type="button"
-                    class="mx-2 block hs-dark-mode font-medium text-white hover:text-amber-300 rounded-full focus:outline-hidden dark:text-neutral-200"
+                    class="mx-2 block hs-dark-mode font-medium p-1 text-white hover:text-amber-300 rounded-full focus:outline-hidden dark:text-neutral-200"
                     data-hs-theme-click-value="dark" (click)="changeTheme('dark')">
-                    <span class="group inline-flex shrink-0 justify-center items-center size-6 rounded-full">
+                    <span class="group shrink-0 justify-center items-center size-6 rounded-full">
                         <svg class="shrink-0 size-5">
                             <use href="/assets/icons/sprite.svg#icon-moon"></use>
                         </svg>
@@ -43,9 +43,9 @@
                 </button>
                 } @else {
                 <button type="button"
-                    class="mx-2 hs-dark-mode-active:block hidden hs-dark-mode font-medium  text-gray-800 rounded-full focus:outline-hidden dark:text-white dark:hover:text-amber-400"
+                    class="mx-2 hs-dark-mode-active:block hidden hs-dark-mode font-medium p-1 text-gray-800 rounded-full focus:outline-hidden dark:text-white dark:hover:text-amber-400"
                     data-hs-theme-click-value="light" (click)="changeTheme('light')">
-                    <span class="group inline-flex shrink-0 justify-center items-center size-6 rounded-full">
+                    <span class="group shrink-0 justify-center items-center size-6 rounded-full">
                         <svg class="shrink-0 size-5">
                             <use href="/assets/icons/sprite.svg#icon-sun"></use>
                         </svg>
