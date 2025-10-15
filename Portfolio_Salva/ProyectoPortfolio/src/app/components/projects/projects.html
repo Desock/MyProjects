@@ -1,59 +1,64 @@
-<app-header></app-header>
-<div class="flex justify-center font-bold font-mono mt-10 text-4xl dark:text-neutral-100">
-    <div class="inline-flex items-center mx-5">
-        <svg class="size-12 dark:bg-white rounded-full">
-            <use href="/assets/icons/sprite.svg#icon-project" />
-        </svg>
-        <h1 class="mx-4">{{'projects' | translate}}</h1>
+<div class="bg-white dark:bg-black flex flex-col">
+    <app-header></app-header>
+    <div class="flex justify-center font-bold font-mono mt-10 text-2xl dark:text-neutral-100">
+        <div class="inline-flex items-center mx-5">
+            <svg class="size-12 dark:bg-white rounded-full">
+                <use href="/assets/icons/sprite.svg#icon-project" />
+            </svg>
+            <h1 class="mx-4">{{'projects' | translate}}</h1>
+        </div>
+
+    </div>
+    <div class="mx-10 py-5 flex justify-center">
+        <p class="mt-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
+            {{'subtittle' | translate}}
+        </p>
+    </div>
+    <!-- Card Grid -->
+    <div class="mx-5 my-2 grid items-center justify-center flex-grow py-5">
+        <!-- Card -->
+        <a class="grid items-start justify-start my-5 transition-transform hover:scale-110 ease-in-out" href="https://github.com/Desock/ProyectoInventario/tree/master"
+            target="_blank">
+            <div class="flex items-center justify-center">
+                <img class="size-60" src="/assets/imgs/logo-project-inventory.png" alt="Logo project">
+            </div>
+
+            <div class="p-2 my-4 max-w-md">
+                <h3 class="relative inline-block font-bold text-lg text-black dark:text-white underline mx-1 my-1">
+                    {{'inventory' | translate}}
+                </h3>
+                <p class="mt-1 pb-5 text-lg md:text-sm text-gray-600 dark:text-neutral-400 mx-1">
+                    {{'inventoryDesc' | translate}}
+                </p>
+            </div>
+        </a>
+    </div>
+    <!-- End Card -->
+
+    <!-- Card -->
+    <div class="mx-5 my-2 grid items-center justify-center flex-grow py-5">
+        <a class="grid items-start justify-start my-5 transition-transform hover:scale-110 ease-in-out"
+            href="https://github.com/Desock/MyProjects/tree/main/Portfolio_Salva/ProyectoPortfolio" target="_blank">
+            <div class="flex items-center justify-center">
+                <svg class=" dark:text-neutral-200 size-60">
+                    <use href="/assets/icons/sprite.svg#message-square-code" />
+                </svg>
+            </div>
+
+            <div class="p-2 my-4">
+                <h3
+                    class="relative inline-block font-bold items-start text-lg text-black dark:text-white underline mx-1 my-1">
+                    Portfolio
+                </h3>
+                <p class="mt-1 pb-5 text-lg items-start md:text-sm text-gray-600 dark:text-neutral-400 mx-1">
+                    {{'portfolioDesc' | translate}}
+                </p>
+            </div>
+        </a>
     </div>
 
-</div>
-<div class="mx-10 py-5 flex justify-center">
-    <p class="mt-1 text-lg md:text-sm text-gray-600 dark:text-neutral-400">
-        {{'subtittle' | translate}}
-    </p>
-</div>
-<!-- Card Grid -->
-<div
-    class="mx-10 space-y-5 flex flex-col my-10 items-center flex-grow">
-    <!-- Card -->
-    <a class="group flex flex-col items-center focus:outline-hidden"
-        href="https://github.com/Desock/ProyectoInventario/tree/master" target="_blank">
-        <div class="overflow-hidden rounded-2xl">
-            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
-                src="/assets/imgs/logo-project-inventory.png" alt="Logo project" width="450" height="450">
-        </div>
-
-        <div class="p-2 my-4">
-            <h3 class="relative inline-block font-bold text-lg text-black dark:text-white underline mx-1 my-1">
-                {{'inventory' | translate}}
-            </h3>
-            <p class="mt-1 pb-5 items-start text-lg md:text-sm text-gray-600 dark:text-neutral-400 mx-1">
-                {{'inventoryDesc' | translate}}
-            </p>
-        </div>
-    </a>
     <!-- End Card -->
 
-    <!-- Card -->
-    <a class="group flex flex-col items-center focus:outline-hidden"
-        href="https://github.com/Desock/MyProjects/tree/main/Portfolio_Salva/ProyectoPortfolio" target="_blank">
-        <div class="overflow-hidden rounded-2xl bg-white">
-            <img class="group-hover:scale-105 group-focus:scale-105 transition-transform duration-500 ease-in-out object-cover rounded-2xl"
-                src="/assets/imgs/welcome_foto_salvador.png" alt="Salva Portfolio" width="450" height="450">
-        </div>
-
-        <div class="p-2 my-4">
-            <h3 class="relative inline-block font-bold text-lg text-black dark:text-white underline mx-1 my-1">
-                Portfolio
-            </h3>
-            <p class="mt-1 pb-5 items-start text-lg md:text-sm text-gray-600 dark:text-neutral-400 mx-1">
-                {{'portfolioDesc' | translate}}
-            </p>
-        </div>
-    </a>
-
-    <!-- End Card -->
+    <!-- End Card Grid -->
+    <app-footer></app-footer>
 </div>
-<!-- End Card Grid -->
-<app-footer></app-footer>
