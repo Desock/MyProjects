@@ -40,13 +40,16 @@ It showcases my projects and skills.
 ```bash 
 # Clonar el repositorio / Clone the repository
 git clone https://github.com/tu-usuario/portfolio-angular.git
-
+````
+```bash 
 # Instalar dependencias / Install dependencies
 npm install
-
+```
+```bash 
 # Ejecutar en desarrollo / Run in development
-ng serve
-
+ng serve -o
+```
+```bash 
 # Compilar para producción / Build for production
 ng build --configuration production
 ```
