@@ -17,7 +17,6 @@ It showcases my projects and skills.
 
 - [🔗 Demo online / Live demo](#-salvador-gómez--portfolio-web)  
 - [🚀 Tecnologías utilizadas / Technologies used](#-tecnologías-utilizadas--technologies-used)  
-- [📸 Capturas de pantalla / Screenshots](#-capturas-de-pantalla--screenshots)  
 - [🧪 Cómo ejecutar el proyecto / How to run the project](#-cómo-ejecutar-el-proyecto--how-to-run-the-project)
 - [📌 Características destacadas / Key features](#-características-destacadas--key-features)  
 - [👨‍🎓 Sobre mí / About me](#-sobre-mí--about-me)
@@ -41,14 +40,6 @@ It showcases my projects and skills.
   **TypeScript**: strict and maintainable typing  
 - **HTML5 & CSS3**: estructura semántica y estilos base    
   **HTML5 & CSS3**: semantic structure and base styling  
-
----
-
-## 📸 Capturas de pantalla / Screenshots  
-
-
- 
-📁 /assets/screenshots/  
 
 ---
 
