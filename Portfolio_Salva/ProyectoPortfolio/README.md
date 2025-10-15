@@ -9,7 +9,21 @@ Este es mi portfolio personal como desarrollador junior, creado con **Angular 20
 Aquí presento mis proyectos y habilidades.
 
 This is my personal portfolio as a junior developer, built with **Angular 20 standalone** and **Tailwind CSS 4**, deployed on **Vercel**.  
-It showcases my projects and skills.
+It showcases my projects and skills.  
+
+---
+
+## 📑 Índice / Table of Contents  
+
+- [🔗 Demo online / Live demo](#-salvador-gómez--portfolio-web)  
+- [🚀 Tecnologías utilizadas / Technologies used](#-tecnologías-utilizadas--technologies-used)  
+- [📸 Capturas de pantalla / Screenshots](#-capturas-de-pantalla--screenshots)  
+- [🧪 Cómo ejecutar el proyecto / How to run the project](#-cómo-ejecutar-el-proyecto--how-to-run-the-project)
+- [📌 Características destacadas / Key features](#-características-destacadas--key-features)  
+- [👨‍🎓 Sobre mí / About me](#-sobre-mí--about-me)
+- [📄 Licencia / License](#-licencia--license)
+
+---
 
 🔗 **Demo online** / **Live demo**: [salvadorgomez-portfolio.vercel.app](https://salvadorgomez-portfolio.vercel.app/)  
 
@@ -37,6 +51,9 @@ It showcases my projects and skills.
 📁 /assets/screenshots/  
 
 ---
+
+🧪 Cómo ejecutar el proyecto / How to run the project  
+
 ```bash 
 # Clonar el repositorio / Clone the repository
 git clone https://github.com/tu-usuario/portfolio-angular.git
