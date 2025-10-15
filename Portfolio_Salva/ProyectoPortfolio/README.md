@@ -76,8 +76,8 @@ ng build --configuration production
 ---  
 
 ## 👨‍🎓 Sobre mí / About me  
-  Soy Salvador Gómez, desarrollador junior actualmente estudiando un Ciclo Superior de Desarrollo de Aplicaciones Web. Este portfolio es mi carta de presentación técnica y visual.  
-  I'm Salvador Gómez, junior developer currently studying an Advanced degree cycle in Web Application Development. This portfolio is my technical and visual introduction.  
+  Soy Salvador Gomez, desarrollador junior actualmente estudiando un Ciclo Superior de Desarrollo de Aplicaciones Web. Este portfolio es mi carta de presentación técnica y visual.  
+  I'm Salvador Gomez, junior developer currently studying an Advanced degree cycle in Web Application Development. This portfolio is my technical and visual introduction.  
 
 ---  
 
