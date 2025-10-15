@@ -43,7 +43,7 @@ It showcases my projects and skills.
 
 ---
 
-🧪 Cómo ejecutar el proyecto / How to run the project  
+## 🧪 Cómo ejecutar el proyecto / How to run the project  
 
 ```bash 
 # Clonar el repositorio / Clone the repository
