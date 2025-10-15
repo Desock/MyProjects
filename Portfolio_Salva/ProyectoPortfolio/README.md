@@ -65,8 +65,8 @@ ng build --configuration production
 
 ---
 
- 📄 Licencia / License
-    Este proyecto está bajo la licencia MIT. Puedes usarlo como base para tu propio portfolio.  
-    This project is licensed under the MIT License. Feel free to use it as a base for your own portfolio.  
+ 📄 Licencia / License  
+    Este proyecto está bajo la licencia MIT. Puedes usarlo como base para tu propio portfolio.   
+    This project is licensed under the MIT License. Feel free to use it as a base for your own portfolio.      
  
 
