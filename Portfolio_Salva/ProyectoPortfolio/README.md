@@ -57,13 +57,13 @@ ng build --configuration production
 - ✅ Animaciones suaves y transiciones  
   ✅ Smooth animations and transitions
 
-  ---
+---
 
 👨‍🎓 Sobre mí / About me  
     Soy Salvador Gómez, desarrollador junior actualmente estudiando un Ciclo Superior de Desarrollo de Aplicaciones Web. Este portfolio es mi carta de presentación técnica y visual.  
     I'm Salvador Gómez, junior developer currently studying an Advanced degree cycle in Web Application Development. This portfolio is my technical and visual introduction.  
 
-  ---
+---
 
  📄 Licencia / License
     Este proyecto está bajo la licencia MIT. Puedes usarlo como base para tu propio portfolio.  
