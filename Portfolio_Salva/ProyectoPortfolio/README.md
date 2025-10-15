@@ -1,4 +1,7 @@
-# 🧑‍💻 Salvador Gómez Risen — Portfolio Web
+# 🧑‍💻 Salvador Gómez Risen — Portfolio Web  
+
+[![License](https://img.shields.io/badge/license-MIT-blue)](LICENSE)
+[![Angular](https://img.shields.io/badge/angular-v20-DD0031?logo=angular&logoColor=white)]()
 
 Este es mi portfolio personal como desarrollador junior, creado con **Angular 20 standalone** y **Tailwind CSS 4**, desplegado en **Vercel**.  
 Aquí presento mis proyectos y habilidades.
