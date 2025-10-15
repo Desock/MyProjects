@@ -47,7 +47,7 @@ It showcases my projects and skills.
 
 ```bash 
 # Clonar el repositorio / Clone the repository
-git clone https://github.com/tu-usuario/portfolio-angular.git
+git clone https://github.com/Desock/MyProjects/Portfolio_Salva/ProyectoPortfolio.git
 ````
 ```bash 
 # Instalar dependencias / Install dependencies
